@@ -1,0 +1,10 @@
+.content{display: flex;}
+.container{background-color: var(--font-color); height: 500px;}
+.write-ups{ margin-left: 200px; margin-top: 40px; color: var(--bg) }
+.image{border-radius: 40%; height: 350px; width: 250px; margin-left: 30px; margin-top: 40px;} 
+
+@media (max-width: 690px) {
+    .content{display: block; }
+    .container{height: 850px;}
+    .write-ups{margin-left: 10px;}   
+  }

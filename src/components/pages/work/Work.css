@@ -1,0 +1,103 @@
+.flex-container {
+    display: flex;
+    gap: 20px;
+    background-color:var(--bg);
+  }
+
+  .trees {
+    width: 90%;
+    display: flex;
+    gap: 20px;
+    margin: auto;
+  }
+  .tree-wrapper {
+    margin: 30px auto;
+    width: 33%;
+  }
+
+  .tree-wrapper .title {
+    padding: 20px;
+    color: var(--card-bg);
+  }
+
+  .tree {
+    border-left: 1px solid var(--card-bg);
+    padding: 0px 0px 0px 20px;
+    width: 80%;
+  }
+
+  .branch {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    border-radius: 10px;
+ border:2px solid var(--bg);
+ background-color: var(--card-bg);
+    color: var(--font-color);
+    display: flex;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+
+  .branch .branch-title {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.57;
+    margin-bottom: 4px;
+  }
+
+  .branch .branch-body {
+    font-size: 12px;
+    margin-left: 40px;
+  }
+
+  .branch::before {
+    content: '';
+    display: inline-block;
+    border-bottom: 1px solid var(--card-bg);
+    position: absolute;
+    left: -20px;
+    top: 25px;
+    width: 20px;
+  }
+
+  @media (max-width: 900px) {
+    .branch {
+      padding: 10px;
+    }
+    .branch p {
+      font-size: 11px;
+}
+ 
+  @media (max-width: 900px) {
+    .branch {
+      padding: 10px;
+    }
+    .branch p {
+      font-size: 11px;
+    }
+    .branch .branch-title {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 690px) {
+    .trees {
+      display: block;
+    
+    }
+    .tree-wrapper {
+      display: block;
+      width: 70%;
+      margin-top: 50px;
+    }
+  
+    
+  }
+  @media (max-width: 500px) {
+    .tree-wrapper {
+      display: block;
+      width: 96%;
+    }
+  }
+
+  }

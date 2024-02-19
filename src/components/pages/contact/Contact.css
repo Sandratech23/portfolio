@@ -1,0 +1,7 @@
+
+  .contactLinks{height: 40px; width: 300px; border: 1px solid var(--font-color);
+    margin:15px auto; padding:5px; text-align: center;}
+    .linkz{text-decoration:none; color: var(--font-color);}
+
+    .contactLinks:hover{border: 1px solid var(--card-bg); width: 330px; height: 45px;}
+    .linkz:hover{color:red}
